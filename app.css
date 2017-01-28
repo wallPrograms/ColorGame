@@ -1,0 +1,24 @@
+body {
+    background-color: #232323;
+}
+
+.square {
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%; /* space inside, this and width create a square */
+    float: left; /* to make the squares float one next to the other */
+    margin: 1.66%; /* 1.66% from each side of each square - 3 squares - 1.66 * 6 to complete the 100% added to 30 % */
+}
+
+#container {
+    margin: 0 auto; /* auto on the left and right will center it */
+    max-width: 600px;
+}
+
+h1 {
+    color: white;
+}
+
+span {
+    color: white;
+}
