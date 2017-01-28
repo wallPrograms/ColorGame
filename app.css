@@ -19,6 +19,16 @@ h1 {
     color: white;
 }
 
+/* Get rid of that because it is more specific that the #stripe color for text
+/*
 span {
     color: white;
+}
+*/
+
+#stripe {
+    background: white;
+    height: 30px;
+    text-align: center;
+    color: black; /* This won't make the span black because of specificity */
 }
