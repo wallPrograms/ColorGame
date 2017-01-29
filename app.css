@@ -32,3 +32,7 @@ span {
     text-align: center;
     color: black; /* This won't make the span black because of specificity */
 }
+
+.selected {
+    background: blue;
+}
