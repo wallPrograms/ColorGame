@@ -1,5 +1,7 @@
 body {
     background-color: #232323;
+    margin: 0;
+    font-family: "Montserrat", "Avenir";
 }
 
 .square {
@@ -8,15 +10,30 @@ body {
     padding-bottom: 30%; /* space inside, this and width create a square */
     float: left; /* to make the squares float one next to the other */
     margin: 1.66%; /* 1.66% from each side of each square - 3 squares - 1.66 * 6 to complete the 100% added to 30 % */
+    border-radius: 15%;
+    transition: background 0.6s;
+    --webkit-transition: background 0.6s; /* browser friendly */
+    -moz-transition: background 0.6s;
 }
 
 #container {
-    margin: 0 auto; /* auto on the left and right will center it */
+    margin: 20px auto; /* auto on the left and right will center it */
     max-width: 600px;
 }
 
 h1 {
+    text-align: center;
+    line-height: 1.1;
+    font-weight: normal;
     color: white;
+    background: steelBlue;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+#colorDisplay {
+    font-size: 200%;
 }
 
 /* Get rid of that because it is more specific that the #stripe color for text
@@ -26,6 +43,11 @@ span {
 }
 */
 
+#message {
+    display: inline-block;
+    width: 20%;
+}
+
 #stripe {
     background: white;
     height: 30px;
@@ -34,5 +56,25 @@ span {
 }
 
 .selected {
-    background: blue;
+    color: white;
+    background: steelBlue;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelBlue;
+    letter-spacing: 1px;
+    font-size: inherit; /* Inherits from the parent element */
+    transition: all 0.3s; /* How to transition transitions between all properties */
+    --webkit-transition: all 0.3s; /* browser friendly */
+    -moz-transition: all 0.3s;
+}
+
+button:hover {
+    color: white;
+    background: steelBlue;
 }
